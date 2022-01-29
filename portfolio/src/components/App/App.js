@@ -5,6 +5,7 @@ import {
   Layout,
 } from 'antd';
 import { Route, Switch } from 'react-router-dom';
+import Home from '../Home/Home';
 const {
   Header,
   Content,
@@ -19,10 +20,12 @@ function App() {
     <Layout style={{ minHeight: '100vh' }}>
       <SideMenu />
       <Layout>
-        <Header style={{background: '#fff'}}></Header>
+        <Header style={{background: '#fff'}}>Riley Johnston</Header>
         <Content>
           <Switch>
-            <Route exact path='/'></Route>
+            <Route exact path='/'>
+              <Home />
+            </Route>
             <Route path='/about'></Route>
             <Route path='/projects'></Route>
             <Route path='/contact'></Route>
