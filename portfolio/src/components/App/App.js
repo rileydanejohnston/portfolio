@@ -8,6 +8,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from '../Home/Home';
 import About from '../About/About';
 import { AppLayout } from './styledApp';
+import Contact from '../Contact/Contact';
 const {
   Header,
   Content,
@@ -32,7 +33,9 @@ function App() {
               <About />
             </Route>
             <Route path='/projects'></Route>
-            <Route path='/contact'></Route>
+            <Route path='/contact'>
+              <Contact />
+            </Route>
           </Switch>
         </Content>
         <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
