@@ -6,6 +6,7 @@ import {
 } from 'antd';
 import { Route, Switch } from 'react-router-dom';
 import Home from '../Home/Home';
+import About from '../About/About';
 const {
   Header,
   Content,
@@ -26,7 +27,9 @@ function App() {
             <Route exact path='/'>
               <Home />
             </Route>
-            <Route path='/about'></Route>
+            <Route path='/about'>
+              <About />
+            </Route>
             <Route path='/projects'></Route>
             <Route path='/contact'></Route>
           </Switch>
