@@ -7,6 +7,7 @@ import {
 import { Route, Switch } from 'react-router-dom';
 import Home from '../Home/Home';
 import About from '../About/About';
+import { AppLayout } from './styledApp';
 const {
   Header,
   Content,
@@ -18,7 +19,7 @@ const {
 function App() {
 
   return (
-    <Layout style={{ minHeight: '100vh' }}>
+    <AppLayout>
       <SideMenu />
       <Layout>
         <Header style={{background: '#fff'}}>Riley Johnston</Header>
@@ -36,7 +37,7 @@ function App() {
         </Content>
         <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
       </Layout>
-    </Layout>
+    </AppLayout>
   )
 }
 
