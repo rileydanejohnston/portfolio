@@ -1,7 +1,7 @@
 import React from 'react';
 import Project from '../Project/Project';
 import { ProjectList, ProjectSection } from './styledProjects';
-import { projectData } from '../../constants/project-constants';
+import { projectData } from '../../constants/project';
 
 export default function Projects() {
 
