@@ -13,10 +13,8 @@ export const Title = styled.h1`
   margin: 0;
 `;
 
-export const Name = styled.p`
+export const Location = styled.p`
   font-size: 48px;
   margin: 0;
 `;
 
-export const Location = styled(Name)`
-`;

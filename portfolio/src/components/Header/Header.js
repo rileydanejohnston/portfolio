@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
-import { HeaderWrapper, Title, Location, Name } from './styledHeader';
+import { HeaderWrapper, Title, Location } from './styledHeader';
 
 export default function Header() {
 
@@ -30,10 +30,7 @@ export default function Header() {
       {
         location.pathname !== '/' 
           && 
-        <>
-          <Location>{route}</Location>
-          <Name>Riley Johnston</Name>
-        </>
+        <Location>Riley Johnston / {route}</Location>
       }
     </HeaderWrapper>
   )
