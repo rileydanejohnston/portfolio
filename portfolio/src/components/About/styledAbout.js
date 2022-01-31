@@ -7,7 +7,6 @@ export const AboutWrapper = styled.section`
   align-items: center;
   grid-gap: 32px;
   max-width: 1280px;
-  padding: 0 50px;
 
   @media( max-width: 1279px) {
     flex-direction: column;

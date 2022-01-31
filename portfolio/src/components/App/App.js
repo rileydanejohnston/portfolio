@@ -25,7 +25,7 @@ function App() {
       <SideMenu />
       <Layout>
         <Header />
-        <Content>
+        <Content style={{ padding: '10px 32px'}}>
           <Switch>
             <Route exact path='/'>
               <Home />
