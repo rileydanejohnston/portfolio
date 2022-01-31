@@ -3,10 +3,7 @@ import { Image } from 'antd';
 
 export const AboutWrapper = styled.section`
   display: flex;
-  height: 100%;
-  align-items: center;
   grid-gap: 32px;
-  max-width: 1280px;
 
   @media( max-width: 1279px) {
     flex-direction: column;
@@ -22,7 +19,6 @@ export const AuthorImage = styled(Image)`
 
 export const TextWrapper = styled.div`
   font-size: 36px;
-  align-self: flex-start;
 
   @media( max-width: 1279px) {
     order: -1;
