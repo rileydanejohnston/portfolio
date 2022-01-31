@@ -10,8 +10,8 @@ import About from '../About/About';
 import { AppLayout } from './styledApp';
 import Contact from '../Contact/Contact';
 import Projects from '../Projects/Projects';
+import Header from '../Header/Header';
 const {
-  Header,
   Content,
   Footer,
 } = Layout;
@@ -24,7 +24,7 @@ function App() {
     <AppLayout>
       <SideMenu />
       <Layout>
-        <Header style={{background: '#fff'}}>Riley Johnston</Header>
+        <Header />
         <Content>
           <Switch>
             <Route exact path='/'>
