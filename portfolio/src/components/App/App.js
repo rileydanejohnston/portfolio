@@ -9,6 +9,7 @@ import Home from '../Home/Home';
 import About from '../About/About';
 import { AppLayout } from './styledApp';
 import Contact from '../Contact/Contact';
+import Projects from '../Projects/Projects';
 const {
   Header,
   Content,
@@ -32,7 +33,9 @@ function App() {
             <Route path='/about'>
               <About />
             </Route>
-            <Route path='/projects'></Route>
+            <Route path='/projects'>
+              <Projects />
+            </Route>
             <Route path='/contact'>
               <Contact />
             </Route>
