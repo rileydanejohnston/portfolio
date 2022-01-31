@@ -19,6 +19,9 @@ export const AuthorImage = styled(Image)`
 
 export const TextWrapper = styled.div`
   font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 24px;
 
   @media( max-width: 1279px) {
     order: -1;
