@@ -40,11 +40,12 @@ export const Title = styled.h3`
 `;
 
 export const Summary = styled.p`
-  margin: 0;
   padding: 0;
 `;
 
 export const FeatureWrapper = styled.ul`
+  list-style-type: circle;
+  padding-left: 40px;
 `;
 
 export const Feature = styled.li`

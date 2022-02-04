@@ -10,11 +10,9 @@ export const HeaderWrapper = styled.header`
 
 export const Title = styled.h1`
   font-size: 64px;
-  margin: 0;
 `;
 
 export const Location = styled.p`
   font-size: 48px;
-  margin: 0;
 `;
 

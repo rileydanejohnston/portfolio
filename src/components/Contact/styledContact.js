@@ -11,9 +11,6 @@ export const ContactWrapper = styled.section`
 `;
 
 export const ContactList = styled.ul`
-  padding: 0;
-  margin: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
   grid-gap: 10px 20px;

@@ -8,10 +8,8 @@ export const HomeWrapper = styled.section`
 
 export const Title = styled.h1`
    font-size: 64px;
-   padding: 0;
 `;
 
 export const Text = styled.p`
   font-size: 24px;
-  margin: 0;
 `;
