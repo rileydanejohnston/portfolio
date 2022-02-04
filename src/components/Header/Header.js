@@ -30,7 +30,7 @@ export default function Header() {
       {
         location.pathname !== '/' 
           && 
-        <Location>Riley Johnston / {route}</Location>
+        <Location>{route}</Location>
       }
     </HeaderWrapper>
   )
