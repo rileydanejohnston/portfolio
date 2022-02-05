@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import { HeaderWrapper, ContentWrapper, NavWrapper, Name, MenuIcon, CloseIcon } from './styledHeader';
-import { 
-  HomeOutlined,
-  UserOutlined,
-  MailOutlined,
-  ToolOutlined
-} from '@ant-design/icons';
+import Navigation from '../Navigation/Navigation';
 
 export default function Header() {
 
@@ -21,6 +16,7 @@ export default function Header() {
             : 
               <MenuIcon onClick={() => setHeaderMenuOpen(!headerMenuOpen)} />
           }
+          <Navigation />
         </NavWrapper>
         <Name>Riley Johnston</Name>
       </ContentWrapper>

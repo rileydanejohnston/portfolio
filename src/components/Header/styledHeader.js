@@ -36,5 +36,11 @@ export const CloseIcon = styled(MenuIcon)`
 `;
 
 export const Name = styled.p`
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
 
+  @media( max-width: 625px ) {
+    font-size: 16px;
+  }
 `;
