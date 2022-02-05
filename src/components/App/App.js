@@ -7,6 +7,7 @@ import { AppWrapper, Main } from './styledApp';
 import Contact from '../Contact/Contact';
 import Projects from '../Projects/Projects';
 import Header from '../Header/Header';
+import ParticleBackground from '../ParticleBackground/ParticleBackground';
 
 
 
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <AppWrapper>
+      <ParticleBackground />
       <Header />
       <Main>
         <Switch>
