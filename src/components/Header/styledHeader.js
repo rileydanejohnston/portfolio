@@ -1,31 +1,40 @@
 import styled from "styled-components/macro";
+import whiteMenu from '../../images/menu-white.svg';
+import whiteClose from '../../images/close-white.svg';
 
 export const HeaderWrapper = styled.header`
-  background: #f0f2f5;
-  padding: 10px 32px;
-  height: auto;
-  background: #20476B;
-  text-align: center;
-  width: 100#;
+  height: 80px;
+  padding: 16px 32px;
+  background: #2D2C6A;
 `;
 
-export const Title = styled.h1`
-  font-size: 60px;
-  font-weight: 700;
-  color: #f0f2f5;
-  
+export const ContentWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+`;
 
-  @media( max-width: 1023px ) {
-    font-size: 36px;
+export const NavWrapper = styled.div`
+`;
+
+export const MenuIcon = styled.button`
+  display: none;
+  background: center / contain no-repeat url(${whiteMenu});
+  height: 24px;
+  width: 24px;
+  border: none;
+
+  @media( max-width: 625px ) {
+    display: block;
   }
 `;
 
-export const Location = styled.p`
-  font-size: 60px;
-  color: #f0f2f5;
-
-  @media( max-width: 1023px ) {
-    font-size: 36px;
-  }
+export const CloseIcon = styled(MenuIcon)`
+  background: center / contain no-repeat url(${whiteClose});
 `;
 
+export const Name = styled.p`
+
+`;

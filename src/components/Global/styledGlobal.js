@@ -11,7 +11,8 @@ export const GlobalStyle = createGlobalStyle`
   body { 
     margin: 0;
     padding: 0;
-    background: #001529;
+    background: #2D2C6A;
+    color: #FFF;
   }
 
   *, *:before, *:after {
