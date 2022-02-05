@@ -18,7 +18,7 @@ export default function Header() {
           }
           <Navigation />
         </NavWrapper>
-        <Name>Riley Johnston</Name>
+        <Name to='/'>Riley Johnston</Name>
       </ContentWrapper>
     </HeaderWrapper>
   )

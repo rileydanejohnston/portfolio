@@ -1,6 +1,7 @@
 import styled from "styled-components/macro";
 import whiteMenu from '../../images/menu-white.svg';
 import whiteClose from '../../images/close-white.svg';
+import { Link } from "react-router-dom";
 
 export const HeaderWrapper = styled.header`
   height: 80px;
@@ -35,10 +36,12 @@ export const CloseIcon = styled(MenuIcon)`
   background: center / contain no-repeat url(${whiteClose});
 `;
 
-export const Name = styled.p`
+export const Name = styled(Link)`
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
+  color: inherit;
+  z-index: 9999;
 
   @media( max-width: 625px ) {
     font-size: 16px;
