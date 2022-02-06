@@ -5,7 +5,7 @@ export const ProjectWrapper = styled.li`
   grid-gap: 48px;
   border: 1px solid black;
   border-radius: 20px;
-  z-index: 9999;
+  z-index: 1;
   background: #2D2C6A;
 
   @media( max-width: 1023px) {
