@@ -1,4 +1,3 @@
-import { Image } from 'antd';
 import rileyPic from '../../images/riley-formal.PNG';
 import React from 'react';
 import {
