@@ -8,9 +8,13 @@ export const NavWrapper = styled.nav`
     padding: 16px;
     position: absolute;
     transition: left .5s ease;
-    top: 100%;
+    top: 80px;
     left: ${(props) => (props.headerMenuOpen ? '0' : '-100%')};
     z-index: 2;
+
+    @media( max-width: 625px ) {
+      top: 64px;
+    }
   }
 `; 
 
