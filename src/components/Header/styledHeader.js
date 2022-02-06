@@ -7,7 +7,10 @@ export const HeaderWrapper = styled.header`
   height: 80px;
   padding: 16px 32px;
   background: #2D2C6A;
-  position: relative;
+
+  @media ( max-width: 625px ) {
+    height: 64px;
+  }
 `;
 
 export const ContentWrapper = styled.div`
