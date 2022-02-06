@@ -26,7 +26,6 @@ export const NavList = styled.ul`
 `;
 
 export const NavGroup = styled.li`
-  z-index: 9999;
 `;
 
 export const NavLinkWrapper = styled(NavLink)`

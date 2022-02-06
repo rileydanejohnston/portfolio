@@ -18,6 +18,7 @@ export const ContentWrapper = styled.div`
 `;
 
 export const NavWrapper = styled.div`
+  z-index: 9999;
 `;
 
 export const MenuIcon = styled.button`
@@ -26,9 +27,15 @@ export const MenuIcon = styled.button`
   height: 24px;
   width: 24px;
   border: none;
+  transition: transform .3s ease;
 
   @media( max-width: 625px ) {
     display: block;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.2);
   }
 `;
 
