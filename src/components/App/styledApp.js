@@ -7,7 +7,3 @@ export const AppWrapper = styled.div`
   margin: 0 auto;
   position: relative;
 `;
-
-export const Main = styled.main`
-  padding: 0 32px;
-`;
