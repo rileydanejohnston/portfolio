@@ -10,6 +10,7 @@ export const NavWrapper = styled.nav`
     transition: left .5s ease;
     top: 100%;
     left: ${(props) => (props.headerMenuOpen ? '0' : '-100%')};
+    z-index: 2;
   }
 `; 
 
