@@ -1,13 +1,29 @@
-import { Text, Title } from './styledHome';
+import { Image } from 'antd';
+import rileyPic from '../../images/riley-formal.PNG';
 import React from 'react';
-import { HomeWrapper } from './styledHome';
+import {
+  HomeWrapper,
+  HomeContent,
+  TextWrapper,
+  Title,
+  Text,
+  AuthorImg
+} from './styledHome';
 
 
 export default function Home() {
   return (
     <HomeWrapper>
-      <Title>Hi, I'm Riley Johnston</Title>
-      <Text>I'm a software engineer.</Text>
+      <HomeContent>
+        <TextWrapper>
+          <Title>Hi, I'm Riley Johnston</Title>
+          <Text>I'm a software engineer.</Text>
+        </TextWrapper>
+        <AuthorImg 
+          src={rileyPic}
+          alt='Riley Johnston - creator of this site'
+        />
+      </HomeContent>
     </HomeWrapper>
   );
 }
