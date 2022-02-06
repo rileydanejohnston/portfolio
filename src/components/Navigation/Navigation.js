@@ -7,9 +7,9 @@ import {
 } from '@ant-design/icons';
 import { NavGroup, NavList, NavWrapper, NavText, NavLinkWrapper } from './styledNavigation';
 
-export default function Navigation() {
+export default function Navigation({ headerMenuOpen }) {
   return (
-    <NavWrapper>
+    <NavWrapper headerMenuOpen={headerMenuOpen}>
       <NavList>
         <NavGroup>
           <NavLinkWrapper exact to='/' activeStyle={{opacity: 1}}>

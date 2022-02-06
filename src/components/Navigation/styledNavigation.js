@@ -3,12 +3,13 @@ import { NavLink } from "react-router-dom";
 
 export const NavWrapper = styled.nav`
   @media( max-width: 625px ) {
-    visibility: hidden;
-    opacity: 0;
-    display: none;
-    background: #2D2C6A;
-    width: 200px;
+    background: #4F4DB8;
+    width: 100%;
     padding: 16px;
+    position: absolute;
+    transition: left .5s ease;
+    top: 100%;
+    left: ${(props) => (props.headerMenuOpen ? '0' : '-100%')};
   }
 `; 
 
@@ -36,6 +37,10 @@ export const NavLinkWrapper = styled(NavLink)`
   transition: opacity .3s;
   opacity: .5;
 
+  @media( max-width: 625px) {
+    width: min-content;
+  }
+
   &:hover {
     opacity: 1;
     cursor: pointer;
@@ -51,7 +56,7 @@ export const NavText = styled.p`
   @media( max-width: 1023px) {
     font-size: 16px;
   }
-  @media( max-width: 624px) {
+  @media( max-width: 625px) {
     font-size: 18px;
     text-align: left;
   }
