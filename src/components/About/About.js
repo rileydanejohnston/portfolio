@@ -3,19 +3,16 @@ import { Text } from '../Home/styledHome';
 import { AboutWrapper, AuthorImage, TextWrapper} from './styledAbout';
 import authImg from '../../images/riley-og.png';
 import { aboutData } from '../../constants/about';
-import { homeData } from '../../constants/home';
 const {
+  beginning,
+  webPreferences,
+  farmApp,
+  goals,
   places,
   college,
   movies,
   bike
 } = aboutData;
-const {
-  beginning,
-  webPreferences,
-  farmApp,
-  goals
-} = homeData;
 
 export default function About() {
   return (
