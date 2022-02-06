@@ -16,7 +16,7 @@ export default function Header() {
             : 
               <MenuIcon onClick={() => setHeaderMenuOpen(!headerMenuOpen)} />
           }
-          <Navigation headerMenuOpen={headerMenuOpen}/>
+          <Navigation headerMenuOpen={headerMenuOpen} setHeaderMenu={setHeaderMenuOpen}/>
         </NavWrapper>
         <Name to='/'>Riley Johnston</Name>
       </ContentWrapper>
