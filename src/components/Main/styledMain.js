@@ -6,5 +6,6 @@ export const MainWrapper = styled.main`
 
   @media( max-width: 625px ) {
     height: calc(100% - 64px);
+    padding: 0 16px;
   }
 `;

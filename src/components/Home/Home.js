@@ -16,8 +16,8 @@ export default function Home() {
     <HomeWrapper>
       <HomeContent>
         <TextWrapper>
-          <Title>Hi, I'm Riley Johnston</Title>
-          <Text>I'm a software engineer.</Text>
+          <Title>Riley Johnston</Title>
+          <Text>software engineer</Text>
         </TextWrapper>
         <AuthorImg 
           src={rileyPic}
