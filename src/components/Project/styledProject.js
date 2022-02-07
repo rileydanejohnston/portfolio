@@ -7,6 +7,7 @@ export const ProjectWrapper = styled.li`
   background: #4F4DB8;
   height: 360px;
   width: 660px;
+  box-shadow: 0 0 8px #ACABEE inset;
 
   @media( max-width: 768px) {
     flex-direction: column;
@@ -17,7 +18,6 @@ export const ProjectWrapper = styled.li`
 export const Image = styled.img`
   width: 300px;
   height: 360px;
-  transition: transform .2s ease;
   border-radius: 20px;
 
   @media( max-width: 768px) {
@@ -26,7 +26,6 @@ export const Image = styled.img`
 
   &:hover {
     cursor: pointer;
-    transform: scale(1.05);
   }
 `;
 
@@ -85,6 +84,7 @@ export const Button = styled.button`
   padding: 5px 10px;
   width: 124px;
   transition: transform .3s ease, background .3s ease;
+  height: 40px;
 
   &:hover {
     cursor: pointer;
