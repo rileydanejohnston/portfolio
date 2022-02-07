@@ -2,13 +2,15 @@ import styled from "styled-components/macro";
 
 export const ProjectWrapper = styled.li`
   display: flex;
-  grid-gap: 48px;
   border-radius: 20px;
   z-index: 1;
   background: #4F4DB8;
+  height: 360px;
+  width: 660px;
 
-  @media( max-width: 1023px) {
+  @media( max-width: 768px) {
     flex-direction: column;
+    grid-gap: 16px;
   }
 `;
 
@@ -17,6 +19,10 @@ export const Image = styled.img`
   height: 360px;
   transition: transform .2s ease;
   border-radius: 20px;
+
+  @media( max-width: 768px) {
+    align-self: center;
+  }
 
   &:hover {
     cursor: pointer;
@@ -38,6 +44,14 @@ export const Title = styled.h3`
   text-align: center;
   margin: 0;
   padding: 0;
+  color: inherit;
+  font-weight: 500;
+  font-size: 26px;
+  margin-bottom: 8px;
+
+  @media( max-width: 1023px ) {
+    font-size: 22px;
+  }
 `;
 
 export const Summary = styled.p`
@@ -65,14 +79,16 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const Button = styled.button`
-  border: 1px solid black;
+  border: 1px solid #FFF;
+  background: inherit;
   border-radius: 20px;
   padding: 5px 10px;
   width: 124px;
-  transition: transform .2s ease;
+  transition: transform .3s ease, background .3s ease;
 
   &:hover {
     cursor: pointer;
     transform: scale(1.05);
+    background: #2D2C6A;
   }
 `;
