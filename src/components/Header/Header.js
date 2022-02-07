@@ -22,7 +22,7 @@ export default function Header({ appWidth }) {
             appWidth={appWidth}
           />
         </NavWrapper>
-        <Name to='/'>Riley Johnston</Name>
+        <Name to='/'>{ appWidth > 768 ? 'Riley Johnston' : 'RJ'}</Name>
       </ContentWrapper>
     </HeaderWrapper>
   )
