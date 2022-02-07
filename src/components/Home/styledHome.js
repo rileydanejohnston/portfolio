@@ -36,7 +36,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-   font-size: 64px;
+   font-size: 80px;
    color: inherit;
 
    @media(max-width: 1200px) {

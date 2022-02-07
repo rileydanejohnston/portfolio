@@ -6,8 +6,6 @@ import ParticleBackground from '../ParticleBackground/ParticleBackground';
 import Main from '../Main/Main';
 import { SizeMe } from 'react-sizeme';
 
-
-
 function App() {
 
   return (
