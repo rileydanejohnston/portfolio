@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { HeaderWrapper, ContentWrapper, NavWrapper, Name, MenuIcon, CloseIcon } from './styledHeader';
 import Navigation from '../Navigation/Navigation';
 
-export default function Header() {
+export default function Header({ appWidth }) {
 
   const [headerMenuOpen, setHeaderMenuOpen] = useState(false);
 
@@ -16,7 +16,11 @@ export default function Header() {
             : 
               <MenuIcon onClick={() => setHeaderMenuOpen(!headerMenuOpen)} />
           }
-          <Navigation headerMenuOpen={headerMenuOpen} setHeaderMenu={setHeaderMenuOpen}/>
+          <Navigation
+            headerMenuOpen={headerMenuOpen}
+            setHeaderMenu={setHeaderMenuOpen}
+            appWidth={appWidth}
+          />
         </NavWrapper>
         <Name to='/'>Riley Johnston</Name>
       </ContentWrapper>

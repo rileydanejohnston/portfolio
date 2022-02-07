@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { 
   HomeOutlined,
   UserOutlined,
@@ -8,7 +8,18 @@ import {
 import { NavGroup, NavList, NavWrapper, NavText, NavLinkWrapper } from './styledNavigation';
 import { navData } from '../../constants/navigation';
 
-export default function Navigation({ headerMenuOpen, setHeaderMenu }) {
+export default function Navigation({
+  headerMenuOpen,
+  setHeaderMenu,
+  appWidth
+}) {
+
+  // close hamburger menu when going from open/mobile to tablet
+  useEffect(() => {
+    if (appWidth > 625 && headerMenuOpen) {
+      setHeaderMenu(false);
+    }
+  }, [appWidth]);
 
   return (
     <NavWrapper headerMenuOpen={headerMenuOpen}>

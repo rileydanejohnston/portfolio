@@ -4,17 +4,23 @@ import { AppWrapper } from './styledApp';
 import Header from '../Header/Header';
 import ParticleBackground from '../ParticleBackground/ParticleBackground';
 import Main from '../Main/Main';
+import { SizeMe } from 'react-sizeme';
 
 
 
 function App() {
 
   return (
-    <AppWrapper>
-      <ParticleBackground />
-      <Header />
-      <Main />
-    </AppWrapper>
+    <SizeMe>
+    {
+      ({ size }) => 
+      <AppWrapper>
+        <ParticleBackground />
+        <Header appWidth={size.width} />
+        <Main />
+      </AppWrapper>
+    }
+    </SizeMe>
   )
 }
 
