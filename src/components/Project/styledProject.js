@@ -3,10 +3,9 @@ import styled from "styled-components/macro";
 export const ProjectWrapper = styled.li`
   display: flex;
   grid-gap: 48px;
-  border: 1px solid black;
   border-radius: 20px;
   z-index: 1;
-  background: #2D2C6A;
+  background: #4F4DB8;
 
   @media( max-width: 1023px) {
     flex-direction: column;

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const NavWrapper = styled.nav`
   @media( max-width: 625px ) {
-    background: #4F4DB8;
+    background: #6563EB;
     width: 100%;
     padding: 16px;
     position: absolute;

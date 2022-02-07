@@ -7,6 +7,7 @@ import {
 } from '@ant-design/icons';
 import { NavGroup, NavList, NavWrapper, NavText, NavLinkWrapper } from './styledNavigation';
 import { navData } from '../../constants/navigation';
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 
 export default function Navigation({
   headerMenuOpen,
@@ -21,8 +22,10 @@ export default function Navigation({
     }
   }, [appWidth]);
 
+  const location = useLocation();
+
   return (
-    <NavWrapper headerMenuOpen={headerMenuOpen}>
+    <NavWrapper headerMenuOpen={headerMenuOpen} path={location.pathname}>
       <NavList>
         {
           navData.map(({ path, text }) => {
