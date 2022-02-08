@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, ButtonWrapper, Feature, FeatureSpan, FeatureWrapper, Image, InfoWrapper, ProjectWrapper, Summary, TextWrapper, Title } from './styledProject';
+import { Button, ButtonWrapper, Feature, FeatureWrapper, Image, InfoWrapper, ProjectWrapper, Summary, TextWrapper, Title } from './styledProject';
 
 export default function Project({
   title,

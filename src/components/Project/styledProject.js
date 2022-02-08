@@ -80,10 +80,6 @@ export const Feature = styled.li`
 
 `;
 
-export const FeatureSpan = styled.span`
-  font-weight: bold;
-`;
-
 export const ButtonWrapper = styled.div`
   display: flex;
   align-items: center;
