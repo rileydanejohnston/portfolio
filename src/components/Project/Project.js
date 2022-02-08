@@ -24,10 +24,10 @@ export default function Project({
           <Summary>{summary}</Summary>
           <FeatureWrapper>
             {
-              features.map(({ featTitle, featInfo}) => {
+              features.map((item) => {
                 return (
                   <Feature>
-                    <FeatureSpan>{featTitle}</FeatureSpan> {featInfo}
+                    {item}
                   </Feature>
                 )
               })
@@ -39,7 +39,7 @@ export default function Project({
             Demo
           </Button>
           <Button onClick={() => handleRedirect(repoLink)}>
-            Code
+            Details
           </Button>
         </ButtonWrapper>
       </InfoWrapper>

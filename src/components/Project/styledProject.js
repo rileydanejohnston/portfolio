@@ -6,7 +6,7 @@ export const ProjectWrapper = styled.li`
   z-index: 1;
   background: #4F4DB8;
   height: 360px;
-  width: 660px;
+  width: 664px;
   box-shadow: 0 0 8px #ACABEE inset;
 
   @media( max-width: 768px) {
@@ -41,8 +41,6 @@ export const TextWrapper = styled.div`
 
 export const Title = styled.h3`
   text-align: center;
-  margin: 0;
-  padding: 0;
   color: inherit;
   font-weight: 500;
   font-size: 26px;
@@ -55,11 +53,14 @@ export const Title = styled.h3`
 
 export const Summary = styled.p`
   padding: 0;
+  font-size: 16px;
+  margin-bottom: 8px;
 `;
 
 export const FeatureWrapper = styled.ul`
   list-style-type: circle;
-  padding-left: 40px;
+  padding-left: 24px;
+  font-size: 16px;
 `;
 
 export const Feature = styled.li`
@@ -85,6 +86,7 @@ export const Button = styled.button`
   width: 124px;
   transition: transform .3s ease, background .3s ease;
   height: 40px;
+  font-size: 16px;
 
   &:hover {
     cursor: pointer;
