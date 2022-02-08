@@ -6,12 +6,17 @@ export const ProjectWrapper = styled.li`
   z-index: 1;
   background: #4F4DB8;
   height: 360px;
-  width: 664px;
+  width: 672px;
   box-shadow: 0 0 8px #ACABEE inset;
 
-  @media( max-width: 768px) {
+  @media( max-width: 1439px) {
+    width: 300px;
+    height: 748px;
     flex-direction: column;
-    grid-gap: 16px;
+  }
+  @media( max-width: 768px) {
+    width: 288px;
+    height: 798px;
   }
 `;
 
@@ -20,8 +25,12 @@ export const Image = styled.img`
   height: 360px;
   border-radius: 20px;
 
+  @media( max-width: 1439px ) {
+    width: 100%;
+  }
   @media( max-width: 768px) {
     align-self: center;
+    height: 345.6px;
   }
 
   &:hover {
@@ -34,9 +43,19 @@ export const InfoWrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 10px 20px;
+
+  @media( max-width: 1439px ) {
+    height: 388px;
+  }
+  @media( max-width: 768px ) {
+    height: 452.4px;
+  }
 `;
 
 export const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  grid-gap: 8px;
 `;
 
 export const Title = styled.h3`
@@ -44,17 +63,11 @@ export const Title = styled.h3`
   color: inherit;
   font-weight: 500;
   font-size: 26px;
-  margin-bottom: 8px;
-
-  @media( max-width: 1023px ) {
-    font-size: 22px;
-  }
 `;
 
 export const Summary = styled.p`
   padding: 0;
   font-size: 16px;
-  margin-bottom: 8px;
 `;
 
 export const FeatureWrapper = styled.ul`
@@ -76,6 +89,12 @@ export const ButtonWrapper = styled.div`
   align-items: center;
   grid-gap: 16px;
   align-self: center;
+
+  @media( max-width: 1439px) {
+    flex-direction: column;
+    width: 100%;
+    grid-gap: 8px;
+  }
 `;
 
 export const Button = styled.button`
@@ -87,6 +106,10 @@ export const Button = styled.button`
   transition: transform .3s ease, background .3s ease;
   height: 40px;
   font-size: 16px;
+
+  @media( max-width: 1439px) {
+    width: 100%;
+  }
 
   &:hover {
     cursor: pointer;
