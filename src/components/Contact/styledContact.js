@@ -1,19 +1,29 @@
 import styled from "styled-components/macro";
-import linkedImg from '../../images/linkedin.svg';
-import githubImg from '../../images/github.svg';
+import linkedImg from '../../images/linkedin-icon.png';
+import githubImg from '../../images/github-icon.svg';
 import copyImg from '../../images/copy.svg';
-import twitterImg from '../../images/twitter.svg';
-import angelImg from '../../images/AngelList.png';
-import climateImg from '../../images/climate.ico';
+import twitterImg from '../../images/twitter-icon.png';
+import angelImg from '../../images/AngelList-icon.png';
+import phoneImg from '../../images/phone-icon.png';
+import emailImg from '../../images/email-icon.png';
 
 export const ContactWrapper = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 `;
 
 export const ContactList = styled.ul`
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 10px 20px;
+  grid-gap: 10px 48px;
+  border-radius: 20px;
+  background: #4F4DB8;
+  box-shadow: 0 0 8px #ACABEE inset;
+  padding: 32px;
+  position: relative;
+  z-index: 1;
 `;
 
 export const ListItem = styled.li`
@@ -25,13 +35,13 @@ export const ListItem = styled.li`
 `;
 
 export const LinkedIcon = styled.a`
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   background: center / cover no-repeat url(${linkedImg});
 `;
 
-export const CopyIcon = styled(LinkedIcon)`
-  background: center / cover no-repeat url(${copyImg});
+export const EmailIcon = styled(LinkedIcon)`
+  background: center / cover no-repeat url(${emailImg});
 `;
 
 export const GithubIcon = styled(LinkedIcon)`
@@ -43,11 +53,10 @@ export const TwitterIcon = styled(LinkedIcon)`
 `;
 
 export const AngelIcon = styled(LinkedIcon)`
-  width: 17px;
+  width: 22px;
   background: center / cover no-repeat url(${angelImg});
 `;
 
-export const ClimateIcon = styled(LinkedIcon)`
-  background: center / cover no-repeat url(${climateImg});
+export const PhoneIcon = styled(LinkedIcon)`
+  background: center / cover no-repeat url(${phoneImg});
 `;
-

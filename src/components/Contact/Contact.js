@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContactList, ContactWrapper, ListItem, AngelIcon, ClimateIcon, LinkedIcon, GithubIcon, TwitterIcon, CopyIcon } from './styledContact';
+import { ContactList, ContactWrapper, ListItem, AngelIcon, LinkedIcon, GithubIcon, TwitterIcon, PhoneIcon, EmailIcon } from './styledContact';
 
 export default function Contact() {
 
@@ -10,19 +10,19 @@ export default function Contact() {
     <ContactWrapper>
       <ContactList>
         <ListItem>
-          <CopyIcon 
+          <EmailIcon 
             onClick={() => navigator.clipboard.writeText(email)}
           />Email
         </ListItem>
         <ListItem>
-          <CopyIcon
+          <PhoneIcon
             onClick={() => navigator.clipboard.writeText(phone)}
           />Phone
         </ListItem>
         <ListItem>
           <LinkedIcon 
             href='https://www.linkedin.com/in/rileyjohnston/' target='_blank' 
-          />Linkedin
+          />LinkedIn
         </ListItem>
         <ListItem>
           <GithubIcon
@@ -41,12 +41,6 @@ export default function Contact() {
             href='https://angel.co/u/riley-johnston'
             target='_blank'
           />AngelList
-        </ListItem>
-        <ListItem>
-          <ClimateIcon 
-            href='https://climatebase.org/profile/57414/riley-johnston'
-            target='_blank'
-          />Climate Base
         </ListItem>
       </ContactList>
     </ContactWrapper>
