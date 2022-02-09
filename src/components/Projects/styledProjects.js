@@ -1,11 +1,6 @@
 import styled from "styled-components/macro";
 
 export const ProjectSection = styled.section`
-  padding: 48px 0;
-
-  @media( max-width: 625px ) {
-    padding: 24px 0;
-  }
 `;
 
 export const ProjectList = styled.ul`
