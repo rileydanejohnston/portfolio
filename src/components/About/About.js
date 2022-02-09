@@ -5,10 +5,9 @@ import authImg from '../../images/riley-og.png';
 import { aboutData } from '../../constants/about';
 const {
   beginning,
-  webPreferences,
-  farmApp,
+  webDev,
   goals,
-  places,
+  education,
   college,
   movies,
   bike
@@ -23,13 +22,9 @@ export default function About() {
       />
       <TextWrapper>
         <Text>{beginning}</Text>
-        <Text>{webPreferences}</Text>
-        <Text>{farmApp}</Text>
         <Text>{goals}</Text>
-        <Text>{places}</Text>
-        <Text> {college}</Text>
-        <Text>{movies}</Text>
-        <Text>{bike}</Text>
+        <Text>{webDev}</Text>
+        <Text>{education}</Text>
       </TextWrapper>
     </AboutWrapper>
   );
