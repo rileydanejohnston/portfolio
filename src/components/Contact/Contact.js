@@ -1,5 +1,16 @@
 import React from 'react';
-import { ContactList, ContactWrapper, ListItem, AngelIcon, LinkedIcon, GithubIcon, TwitterIcon, CopySymbol, Title, ContactContent } from './styledContact';
+import {
+  ContactList,
+  ContactWrapper,
+  ListItem,
+  AngelIcon,
+  LinkedIcon,
+  GithubIcon,
+  TwitterIcon,
+  CopySymbol,
+  Title,
+  ContactContent
+} from './styledContact';
 
 export default function Contact() {
 
