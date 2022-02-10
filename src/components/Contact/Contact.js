@@ -1,5 +1,5 @@
 import React from 'react';
-import { ContactList, ContactWrapper, ListItem, AngelIcon, LinkedIcon, GithubIcon, TwitterIcon, PhoneIcon, EmailIcon } from './styledContact';
+import { ContactList, ContactWrapper, ListItem, AngelIcon, LinkedIcon, GithubIcon, TwitterIcon, CopyIcon, CopySymbol } from './styledContact';
 
 export default function Contact() {
 
@@ -13,9 +13,19 @@ export default function Contact() {
       <ContactList>
         <ListItem>
           {email}
+          <CopySymbol
+            onClick={() => navigator.clipboard.writeText(email)}
+          >
+            &#10697;
+          </CopySymbol>
         </ListItem>
         <ListItem>
           {phone}
+          <CopySymbol
+            onClick={() => navigator.clipboard.writeText(copyPhone)}
+          >
+            &#10697;
+          </CopySymbol>
         </ListItem>
         <ListItem>
           <LinkedIcon 
