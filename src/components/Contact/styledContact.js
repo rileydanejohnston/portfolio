@@ -11,22 +11,35 @@ export const ContactWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100%;
   padding: 0 32px;
 `;
 
-export const ContactList = styled.ul`
+export const ContactContent = styled.div`
   display: flex;
+  flex-direction: column;
+  grid-gap: 48px;
   border-radius: 20px;
   background: #4F4DB8;
   box-shadow: 0 0 8px #ACABEE inset;
-  padding: 0 32px;
+  padding: 32px;
   position: relative;
   z-index: 1;
-  height: 200px;
+  width: 100%;
+`;
+
+export const ContactList = styled.ul`
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+`;
+
+export const Title = styled.h2`
+  font-size: 32px;
+  color: inherit;
+  text-align: center;
+  font-weight: 400;
 `;
 
 export const ListItem = styled.li`
