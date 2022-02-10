@@ -12,26 +12,28 @@ export const ContactWrapper = styled.section`
   justify-content: center;
   align-items: center;
   height: 100%;
+  padding: 0 32px;
 `;
 
 export const ContactList = styled.ul`
   display: flex;
-  flex-wrap: wrap;
-  grid-gap: 10px 48px;
   border-radius: 20px;
   background: #4F4DB8;
   box-shadow: 0 0 8px #ACABEE inset;
-  padding: 32px;
+  padding: 0 32px;
   position: relative;
   z-index: 1;
+  height: 200px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 `;
 
 export const ListItem = styled.li`
-  font-size: 24px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 138px;
 `;
 
 export const LinkedIcon = styled.a`

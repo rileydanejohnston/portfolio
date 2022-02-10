@@ -4,43 +4,41 @@ import { ContactList, ContactWrapper, ListItem, AngelIcon, LinkedIcon, GithubIco
 export default function Contact() {
 
   const email = 'rileydanejohnston@gmail.com';
-  const phone = '8034879451';
+  const phone = '803-487-9451';
+  const copyPhone = '8034879451';
+  //onClick={() => navigator.clipboard.writeText(phone)}
 
   return (
     <ContactWrapper>
       <ContactList>
         <ListItem>
-          <EmailIcon 
-            onClick={() => navigator.clipboard.writeText(email)}
-          />Email
+          {email}
         </ListItem>
         <ListItem>
-          <PhoneIcon
-            onClick={() => navigator.clipboard.writeText(phone)}
-          />Phone
+          {phone}
         </ListItem>
         <ListItem>
           <LinkedIcon 
             href='https://www.linkedin.com/in/rileyjohnston/' target='_blank' 
-          />LinkedIn
+          />
         </ListItem>
         <ListItem>
           <GithubIcon
           href='https://github.com/rileydanejohnston'
           target='_blank'
-        />GitHub
+        />
         </ListItem>
         <ListItem>
           <TwitterIcon
           href='https://twitter.com/RileyDJohnston'
           target='_blank'
-          />Twitter
+          />
         </ListItem>
         <ListItem>
           <AngelIcon
             href='https://angel.co/u/riley-johnston'
             target='_blank'
-          />AngelList
+          />
         </ListItem>
       </ContactList>
     </ContactWrapper>
