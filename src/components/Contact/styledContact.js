@@ -102,6 +102,10 @@ export const ToolTip = styled.span`
   top: -20px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media( max-width: 480px) {
+    font-size: 10px;
+  }
 `;
 
 export const LinkedIcon = styled.a`
