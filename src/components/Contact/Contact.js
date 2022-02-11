@@ -69,7 +69,7 @@ export default function Contact() {
             <GithubIcon
             href='https://github.com/rileydanejohnston'
             target='_blank'
-          />
+            />
           </ListItem>
           <ListItem>
             <TwitterIcon
