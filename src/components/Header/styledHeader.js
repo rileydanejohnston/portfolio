@@ -10,6 +10,7 @@ export const HeaderWrapper = styled.header`
 
   @media ( max-width: 625px ) {
     height: 64px;
+    padding: 16px;
   }
 `;
 
