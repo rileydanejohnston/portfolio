@@ -3,8 +3,6 @@ import linkedImg from '../../images/linkedin-icon.png';
 import githubImg from '../../images/github-icon.svg';
 import twitterImg from '../../images/twitter-icon.png';
 import angelImg from '../../images/AngelList-icon.png';
-import phoneImg from '../../images/phone-icon.png';
-import emailImg from '../../images/email-icon.png';
 
 export const ContactWrapper = styled.section`
   display: flex;
@@ -119,10 +117,6 @@ export const LinkedIcon = styled.a`
   }
 `;
 
-export const EmailIcon = styled(LinkedIcon)`
-  background: center / cover no-repeat url(${emailImg});
-`;
-
 export const GithubIcon = styled(LinkedIcon)`
   background: center / cover no-repeat url(${githubImg});
 `;
@@ -138,8 +132,4 @@ export const AngelIcon = styled(LinkedIcon)`
   @media( max-width: 480px) {
     width: 16.5px;
   }
-`;
-
-export const PhoneIcon = styled(LinkedIcon)`
-  background: center / cover no-repeat url(${phoneImg});
 `;
