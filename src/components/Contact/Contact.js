@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   ContactList,
   ContactWrapper,
@@ -9,15 +9,30 @@ import {
   TwitterIcon,
   CopySymbol,
   Title,
-  ContactContent
+  ContactContent,
+  ToolTip
 } from './styledContact';
 
 export default function Contact() {
+
+  const [emailOpen, setEmailOpen] = useState(false);
+  const [phoneOpen, setPhoneOpen] = useState(false);
+  const [toolTip, setToolTip] = useState('Copy');
 
   const email = 'rileydanejohnston@gmail.com';
   const phone = '803-487-9451';
   const copyPhone = '8034879451';
 
+  useEffect(() => {
+    if (toolTip === 'Copied!' && (emailOpen || phoneOpen)) {
+      setToolTip('Copy');
+    }
+  }, [emailOpen, phoneOpen]);
+
+  const handleCopyClick = (text) => {
+    navigator.clipboard.writeText(text);
+    setToolTip('Copied!');
+  }
   return (
     <ContactWrapper>
       <ContactContent>
@@ -26,16 +41,22 @@ export default function Contact() {
           <ListItem>
             {email}
             <CopySymbol
-              onClick={() => navigator.clipboard.writeText(email)}
+              onClick={() => handleCopyClick(email)}
+              onMouseEnter={() => setEmailOpen(true)}
+              onMouseLeave={() => setEmailOpen(false)}
             >
+              <ToolTip toolTipOpen={emailOpen}>{toolTip}</ToolTip>
               &#10697;
             </CopySymbol>
           </ListItem>
           <ListItem>
             {phone}
             <CopySymbol
-              onClick={() => navigator.clipboard.writeText(copyPhone)}
+              onClick={() => handleCopyClick(copyPhone)}
+              onMouseEnter={() => setPhoneOpen(true)}
+              onMouseLeave={() => setPhoneOpen(false)}
             >
+              <ToolTip toolTipOpen={phoneOpen}>{toolTip}</ToolTip>
               &#10697;
             </CopySymbol>
           </ListItem>

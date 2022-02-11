@@ -82,6 +82,7 @@ export const ListItem = styled.li`
 
 export const CopySymbol = styled.p`
   font-size: 30px;
+  position: relative;
 
   @media( max-width: 480px) {
     font-size: 20px;
@@ -90,6 +91,17 @@ export const CopySymbol = styled.p`
   &:hover {
     cursor: pointer;
   }
+`;
+
+export const ToolTip = styled.span`
+  width: max-content;
+  font-size: 12px;
+  opacity: ${(props) => (props.toolTipOpen ? 1 : 0)};
+  transition: opacity .8s ease;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
 `;
 
 export const LinkedIcon = styled.a`
