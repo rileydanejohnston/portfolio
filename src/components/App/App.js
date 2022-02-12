@@ -6,14 +6,17 @@ import Footer from '../Footer/Footer';
 import ParticleBackground from '../ParticleBackground/ParticleBackground';
 import Main from '../Main/Main';
 import { SizeMe } from 'react-sizeme';
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 
 function App() {
+
+  const location = useLocation();
 
   return (
     <SizeMe>
     {
       ({ size }) => 
-      <AppWrapper>
+      <AppWrapper path={location.pathname}>
         <ParticleBackground />
         <Header appWidth={size.width} />
         <Main />

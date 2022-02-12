@@ -9,9 +9,11 @@ export const FooterWrapper = styled.footer`
   justify-content: space-between;
   align-items: center;
   padding: 16px 32px;
+  height: 64px;
 
   @media( max-width: 480px) {
     padding: 16px;
+    height: 96px;
   }
 `;
 
