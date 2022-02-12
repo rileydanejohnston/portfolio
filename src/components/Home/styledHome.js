@@ -47,11 +47,22 @@ export const Title = styled.h1`
   }
 `;
 
+export const SubtitleWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media(max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    grid-gap: 8px;
+  }
+`;
+
 export const Text = styled.p`
   font-size: 24px;
 
-  @media(max-width: 480px) {
-    font-size: 18px;
+  @media(max-width: 1200px) {
+    font-size: 16px;
   }
 `;
 

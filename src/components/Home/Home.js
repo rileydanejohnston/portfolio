@@ -5,6 +5,7 @@ import {
   HomeContent,
   TextWrapper,
   Title,
+  SubtitleWrapper,
   Text,
   AuthorImg,
   PopupText
@@ -17,10 +18,10 @@ export default function Home({ openTech }) {
       <HomeContent>
         <TextWrapper>
           <Title>Riley Johnston</Title>
-          <Text>software engineer</Text>
-          <PopupText
-            onClick={openTech}
-          >technologies</PopupText>
+          <SubtitleWrapper>
+            <Text>software engineer</Text>
+            <PopupText onClick={openTech}>technologies</PopupText>
+          </SubtitleWrapper>
         </TextWrapper>
         <AuthorImg 
           src={rileyPic}
