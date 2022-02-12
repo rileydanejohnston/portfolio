@@ -18,10 +18,10 @@ export const FooterWrapper = styled.footer`
 `;
 
 export const CiteText = styled.p`
-  font-size: 18px;
+  font-size: 16px;
 
   @media( max-width: 480px) {
-    font-size: 16px;
+    font-size: 14px;
   }
 `;
 
