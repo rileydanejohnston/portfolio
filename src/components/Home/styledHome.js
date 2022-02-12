@@ -86,14 +86,13 @@ export const Summary = styled(Text)`
 `;
 
 export const PopupText = styled(Text)`
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 5px;
-  width: min-content;
+  width: max-content;
   z-index: 1;
+  color: #1890ff;
 
   &:hover {
     cursor: pointer;
+    
   }
 `;
 
