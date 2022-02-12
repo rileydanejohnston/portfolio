@@ -6,17 +6,21 @@ import {
   TextWrapper,
   Title,
   Text,
-  AuthorImg
+  AuthorImg,
+  PopupText
 } from './styledHome';
 
 
-export default function Home() {
+export default function Home({ openTech }) {
   return (
     <HomeWrapper>
       <HomeContent>
         <TextWrapper>
           <Title>Riley Johnston</Title>
           <Text>software engineer</Text>
+          <PopupText
+            onClick={openTech}
+          >technologies</PopupText>
         </TextWrapper>
         <AuthorImg 
           src={rileyPic}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import 'antd/dist/antd.css';
 import { AppWrapper } from './styledApp';
 import Header from '../Header/Header';
@@ -7,10 +7,20 @@ import ParticleBackground from '../ParticleBackground/ParticleBackground';
 import Main from '../Main/Main';
 import { SizeMe } from 'react-sizeme';
 import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
+import Popup from '../Popup/Popup';
 
 function App() {
 
   const location = useLocation();
+  const [techOpen, setTechOpen] = useState(false);
+
+  const closePopups = () => {
+    setTechOpen(false);
+  }
+
+  const openTechPopup = () => {
+    setTechOpen(true);
+  }
 
   return (
     <SizeMe>
@@ -19,8 +29,18 @@ function App() {
       <AppWrapper path={location.pathname}>
         <ParticleBackground />
         <Header appWidth={size.width} />
-        <Main />
+        <Main
+          openTech={openTechPopup}
+        />
         <Footer />
+        {
+          location.pathname === '/'
+            && 
+          <Popup
+            closePopups={closePopups}
+            techOpen={techOpen}
+          />
+        }
       </AppWrapper>
     }
     </SizeMe>

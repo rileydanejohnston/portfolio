@@ -55,6 +55,18 @@ export const Text = styled.p`
   }
 `;
 
+export const PopupText = styled(Text)`
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+  width: min-content;
+  z-index: 100;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
 export const AuthorImg = styled.img`
   width: 464px;
   height: 464px;

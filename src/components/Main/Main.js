@@ -6,12 +6,12 @@ import Contact from '../Contact/Contact';
 import Projects from '../Projects/Projects';
 import { MainWrapper } from './styledMain';
 
-export default function Main() {
+export default function Main({ openTech }) {
   return (
     <MainWrapper>
       <Switch>
           <Route exact path='/'>
-            <Home />
+            <Home openTech={openTech}/>
           </Route>
           <Route path='/about'>
             <About />
