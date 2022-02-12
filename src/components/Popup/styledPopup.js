@@ -8,12 +8,13 @@ export const PopupWrapper = styled.div`
   justify-content: center;
   align-items: center;
   position: fixed;
-  z-index: 2;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  opacity: ${(props) => (props.techOpen ? 1 : 0)};
   transition: opacity .4s ease-in;
+  opacity: ${(props) => (props.techOpen ? 1 : 0)};
+  z-index: ${(props) => (props.techOpen ? 3 : 1)};
+  visibility: ${(props) => (props.techOpen ? 'visible' : 'hidden')}
 `;
 
 export const Content = styled.div`

@@ -60,7 +60,7 @@ export const PopupText = styled(Text)`
   text-decoration-thickness: 1px;
   text-underline-offset: 5px;
   width: min-content;
-  z-index: 100;
+  z-index: 1;
 
   &:hover {
     cursor: pointer;

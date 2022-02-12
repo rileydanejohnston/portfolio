@@ -23,7 +23,7 @@ export const ContentWrapper = styled.div`
 `;
 
 export const NavWrapper = styled.div`
-  z-index: 9999;
+  z-index: 2;
 `;
 
 export const MenuIcon = styled.button`
