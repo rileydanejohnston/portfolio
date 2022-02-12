@@ -1,8 +1,7 @@
 import styled from "styled-components/macro";
 
 export const HomeWrapper = styled.section`
-  width: max-content;
-  margin: 0 auto;
+  width: 100%;
   display: flex;
   align-items: center;
   height: 100%;
@@ -11,7 +10,7 @@ export const HomeWrapper = styled.section`
 export const HomeContent = styled.div`
   display: flex;
   grid-gap: 64px;
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
 
   @media(max-width: 1200px) {
     grid-gap: 48px;
@@ -24,23 +23,30 @@ export const HomeContent = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  grid-gap: 16px;
-  justify-content: center;
+  width: 586.96px;
 
+  @media( max-width: 1200px) {
+    width: 338.36px;
+  }
   @media(max-width: 768px) {
     align-items: center;
     grid-gap: 8px;
+  }
+  @media( max-width: 480px) {
+    width: auto;
   }
 `;
 
 export const Title = styled.h1`
    font-size: 80px;
    color: inherit;
+   margin-bottom: 16px;
 
-   @media(max-width: 1200px) {
-     font-size: 46px;
+  @media(max-width: 1200px) {
+    font-size: 46px;
+  }
+  @media(max-width: 768px) {
+    text-align: center;
   }
   @media(max-width: 480px) {
     font-size: 30px;
@@ -50,11 +56,13 @@ export const Title = styled.h1`
 export const SubtitleWrapper = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-bottom: 24px;
 
-  @media(max-width: 768px) {
+  @media(max-width: 480px) {
     flex-direction: column;
     align-items: center;
     grid-gap: 8px;
+    margin-bottom: 32px;
   }
 `;
 
@@ -63,6 +71,17 @@ export const Text = styled.p`
 
   @media(max-width: 1200px) {
     font-size: 16px;
+  }
+`;
+
+export const Summary = styled(Text)`
+  font-size: 18px;
+
+  @media(max-width: 1200px) {
+    font-size: 14px;
+  }
+  @media(max-width: 480px) {
+    text-align: center;
   }
 `;
 
