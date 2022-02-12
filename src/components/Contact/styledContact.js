@@ -110,10 +110,15 @@ export const LinkedIcon = styled.a`
   width: 32px;
   height: 32px;
   background: center / cover no-repeat url(${linkedImg});
+  transition: transform .2s;
 
   @media( max-width: 480px) {
     width: 24px;
     height: 24px;
+  }
+
+  &:hover {
+    transform: scale(1.2);
   }
 `;
 
