@@ -18,8 +18,8 @@ export const PopupWrapper = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 400px;
-  height: 400px;
+  width: max-content;
+  height: max-content;
   border-radius: 20px;
   background: #4F4DB8;
   box-shadow: 0 0 8px #ACABEE inset;

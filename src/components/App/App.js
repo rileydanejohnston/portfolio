@@ -8,6 +8,7 @@ import Main from '../Main/Main';
 import { SizeMe } from 'react-sizeme';
 import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
 import Popup from '../Popup/Popup';
+import TechPopup from '../TechPopup/TechPopup';
 
 function App() {
 
@@ -36,7 +37,7 @@ function App() {
         {
           location.pathname === '/'
             && 
-          <Popup
+          <TechPopup
             closePopups={closePopups}
             techOpen={techOpen}
           />
