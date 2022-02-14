@@ -37,6 +37,11 @@ export const Close = styled.button`
   border: none;
   transition: transform .3s;
 
+  @media( max-width: 625px ) {
+    width: 24px;
+    height: 24px;
+  }
+
   &:hover {
     cursor: pointer;
     transform: scale(1.2);
