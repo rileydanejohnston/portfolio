@@ -47,6 +47,7 @@ export default function Project({
         src={image}
         alt={altText}
         onClick={() => handleRedirect(liveLink)}
+        title={title}
       />
     </ProjectWrapper>
   )

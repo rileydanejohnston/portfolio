@@ -1,5 +1,6 @@
 import aroundImg from '../images/around-main-page.png';
 import newsImg from '../images/news-main-cropped.png';
+import portfolioImg from '../images/portfolio.png';
 
 export const projectData = [
   {
@@ -17,7 +18,7 @@ export const projectData = [
     altText: 'Around The U.S. home page'
   },
   {
-    title: 'Around the U.S.',
+    title: 'Around The U.S.',
     summary: 'A social media site where users create accounts, post photos, and interact with photos.',
     features: [
       'React, JavaScript, CSS',
@@ -31,18 +32,17 @@ export const projectData = [
     altText: 'News Explorer home page'
   },
   {
-    title: 'News Explorer',
-    summary: 'A news app where users can search for news, create an account and save articles.',
+    title: 'My Portfolio',
+    summary: 'My personal website to display my work and who I am.',
     features: [
-      'React, JavaScript, News API, Styled-Components',
-      'Express.js, Node.js, MongoDB',
-      'Deployed with Google Cloud'
+      'React, JavaScript, Styled-Components, Particle.js',
+      'Deployed with UNDER CONSTRUCTION'
     ],
-    liveLink: 'https://www.my-news-explorer.students.nomoreparties.sbs',
-    demoLink: 'https://www.loom.com/share/15c90be6c7cc4f018fda792be4a1f7b0',
-    repoLink: 'https://github.com/rileydanejohnston/news-explorer-frontend',
-    image: newsImg,
-    altText: 'Around The U.S. home page'
+    liveLink: 'https://rileydanejohnston.github.io/portfolio',
+    demoLink: 'UNDER CONSTRUCTION',
+    repoLink: 'https://github.com/rileydanejohnston/portfolio',
+    image: portfolioImg,
+    altText: 'Portfolio home page'
   },
   {
     title: 'Around the U.S.',

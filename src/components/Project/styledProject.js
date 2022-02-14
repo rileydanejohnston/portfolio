@@ -24,6 +24,8 @@ export const Image = styled.img`
   width: 300px;
   height: 360px;
   border-radius: 20px;
+  box-shadow: 0 0 2px #FFF;
+  box-shadow: ${(props) => (props.title === 'My Portfolio' ? '0 0 2px #FFF' : 'none')};
 
   @media( max-width: 1439px ) {
     width: 100%;
