@@ -2,11 +2,12 @@ import aroundImg from '../images/around-main-page.png';
 import newsImg from '../images/news-main-cropped.png';
 import portfolioImg from '../images/portfolio.png';
 import dotcotImg from '../images/dotcot.png';
+import portlandImg from '../images/portland.png';
 
 export const projectData = [
   {
     title: 'News Explorer',
-    summary: 'A news app where users can search for news, create an account and save articles.',
+    summary: 'A news app where users can search for news, create an account, and save articles.',
     features: [
       'React, JavaScript, News API, Styled-Components',
       'Express.js, Node.js, MongoDB',
@@ -47,7 +48,7 @@ export const projectData = [
   },
   {
     title: 'DotCot',
-    summary: 'A platform where investors can browser, filter and select startups based on custom criteria. I was a frontend developer on the project.',
+    summary: 'A platform where investors can browser, filter, and select startups based on custom criteria. I was a frontend developer on the project.',
     features: [
       'React, JavaScript, Styled-Components, React SizeMe',
     ],
@@ -56,5 +57,17 @@ export const projectData = [
     repoLink: 'https://github.com/vgalilei/venturecat',
     image: dotcotImg,
     altText: 'VentureCat home page'
+  },
+  {
+    title: 'From Portland To Portland',
+    summary: 'A site about travel destinations in the United States. This project was used to practice responsive design, flexbox, grid, and transitions.',
+    features: [
+      'CSS, HTML',
+    ],
+    liveLink: 'https://rileydanejohnston.github.io/web_project_3/',
+    demoLink: 'UNDER CONSTRUCTION',
+    repoLink: 'https://github.com/rileydanejohnston/web_project_3',
+    image: portlandImg,
+    altText: 'From Portland To Portland home page'
   },
 ];
