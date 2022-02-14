@@ -7,7 +7,6 @@ import ParticleBackground from '../ParticleBackground/ParticleBackground';
 import Main from '../Main/Main';
 import { SizeMe } from 'react-sizeme';
 import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
-import Popup from '../Popup/Popup';
 import TechPopup from '../TechPopup/TechPopup';
 
 function App() {
@@ -15,11 +14,11 @@ function App() {
   const location = useLocation();
   const [techOpen, setTechOpen] = useState(false);
 
-  const closePopups = () => {
+  function closePopups() {
     setTechOpen(false);
   }
 
-  const openTechPopup = () => {
+  function openTechPopup() {
     setTechOpen(true);
   }
 
