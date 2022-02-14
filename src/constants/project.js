@@ -1,6 +1,7 @@
 import aroundImg from '../images/around-main-page.png';
 import newsImg from '../images/news-main-cropped.png';
 import portfolioImg from '../images/portfolio.png';
+import dotcotImg from '../images/dotcot.png';
 
 export const projectData = [
   {
@@ -35,7 +36,7 @@ export const projectData = [
     title: 'My Portfolio',
     summary: 'My personal website to display my work and who I am.',
     features: [
-      'React, JavaScript, Styled-Components, Particle.js',
+      'React, JavaScript, Styled-Components, Particle.js, React SizeMe',
       'Deployed with UNDER CONSTRUCTION'
     ],
     liveLink: 'https://rileydanejohnston.github.io/portfolio',
@@ -45,17 +46,15 @@ export const projectData = [
     altText: 'Portfolio home page'
   },
   {
-    title: 'Around the U.S.',
-    summary: 'A social media site where users create accounts, post photos, and interact with photos.',
+    title: 'DotCot',
+    summary: 'A platform where investors can browser, filter and select startups based on custom criteria. I was a frontend developer on the project.',
     features: [
-      'React, JavaScript, CSS',
-      'Express.js, Node.js, MongoDB',
-      'Deployed with Google Cloud'
+      'React, JavaScript, Styled-Components, React SizeMe',
     ],
-    liveLink: 'https://www.around-the-us.students.nomoreparties.site',
-    demoLink: 'https://www.loom.com/share/d4e0d3b5ecb145a9a897f135fe692965',
-    repoLink: 'https://github.com/rileydanejohnston/react-around-api-full',
-    image: aroundImg,
-    altText: 'News Explorer home page'
+    liveLink: 'https://peaceful-woodland-39661.herokuapp.com/welcome',
+    demoLink: 'UNDER CONSTRUCTION',
+    repoLink: 'https://github.com/vgalilei/venturecat',
+    image: dotcotImg,
+    altText: 'VentureCat home page'
   },
 ];
