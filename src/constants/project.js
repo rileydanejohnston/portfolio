@@ -40,7 +40,7 @@ export const projectData = [
       'React, JavaScript, Styled-Components, Particle.js, React SizeMe',
       'Deployed with Netlify'
     ],
-    liveLink: 'https://rileydanejohnston.github.io/portfolio',
+    liveLink: 'https://rileydanejohnston.com/',
     demoLink: '',
     repoLink: 'https://github.com/rileydanejohnston/portfolio',
     image: portfolioImg,
