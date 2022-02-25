@@ -41,7 +41,7 @@ export const projectData = [
       'Deployed with Netlify'
     ],
     liveLink: 'https://rileydanejohnston.github.io/portfolio',
-    demoLink: 'UNDER CONSTRUCTION',
+    demoLink: '',
     repoLink: 'https://github.com/rileydanejohnston/portfolio',
     image: portfolioImg,
     altText: 'Portfolio home page'
@@ -53,7 +53,7 @@ export const projectData = [
       'React, JavaScript, Styled-Components, React SizeMe',
     ],
     liveLink: 'https://peaceful-woodland-39661.herokuapp.com/welcome',
-    demoLink: 'UNDER CONSTRUCTION',
+    demoLink: '',
     repoLink: 'https://github.com/vgalilei/venturecat',
     image: dotcotImg,
     altText: 'VentureCat home page'
@@ -65,7 +65,7 @@ export const projectData = [
       'CSS, HTML',
     ],
     liveLink: 'https://rileydanejohnston.github.io/web_project_3/',
-    demoLink: 'UNDER CONSTRUCTION',
+    demoLink: '',
     repoLink: 'https://github.com/rileydanejohnston/web_project_3',
     image: portlandImg,
     altText: 'From Portland To Portland home page'

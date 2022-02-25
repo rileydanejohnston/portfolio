@@ -35,9 +35,12 @@ export default function Project({
           </FeatureWrapper>
         </TextWrapper>
         <ButtonWrapper>
-          <Button onClick={() => handleRedirect(demoLink)}>
-            Demo
-          </Button>
+          {
+            demoLink !== '' && 
+            <Button onClick={() => handleRedirect(demoLink)}>
+              Demo
+            </Button>
+          }
           <Button onClick={() => handleRedirect(repoLink)}>
             Details
           </Button>
