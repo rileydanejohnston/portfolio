@@ -38,7 +38,7 @@ export const projectData = [
     summary: 'My personal website to display my work and who I am.',
     features: [
       'React, JavaScript, Styled-Components, Particle.js, React SizeMe',
-      'Deployed with UNDER CONSTRUCTION'
+      'Deployed with Netlify'
     ],
     liveLink: 'https://rileydanejohnston.github.io/portfolio',
     demoLink: 'UNDER CONSTRUCTION',
