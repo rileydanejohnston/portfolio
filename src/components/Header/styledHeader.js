@@ -53,7 +53,7 @@ export const Name = styled(Link)`
   font-style: normal;
   font-weight: 700;
   color: inherit;
-  z-index: 9999;
+  z-index: 2;
 
   @media( max-width: 625px ) {
     font-size: 16px;
