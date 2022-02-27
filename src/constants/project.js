@@ -41,7 +41,7 @@ export const projectData = [
       'Deployed with Netlify'
     ],
     liveLink: 'https://rileydanejohnston.com/',
-    demoLink: '',
+    demoLink: 'https://www.loom.com/share/4516c4096aea454c99c6410116f9f196',
     repoLink: 'https://github.com/rileydanejohnston/portfolio',
     image: portfolioImg,
     altText: 'Portfolio home page'
