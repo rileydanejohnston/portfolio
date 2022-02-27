@@ -24,7 +24,7 @@ export default function Home({ openTech }) {
             <Text>software engineer</Text>
             <PopupText onClick={openTech}>technologies</PopupText>
           </SubtitleWrapper>
-          <Summary>I'm passionate about turning exciting ideas into reality. My main tools are React, styled-components, Node.js, Express.js, and MongoDB.</Summary>
+          <Summary>I'm passionate about turning exciting ideas into reality. My main tools are React, Styled-Components, Node.js, Express.js, and MongoDB.</Summary>
         </TextWrapper>
         <AuthorImg 
           src={rileyPic}
