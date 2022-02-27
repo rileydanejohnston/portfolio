@@ -10,14 +10,13 @@ export const HomeWrapper = styled.section`
 export const HomeContent = styled.div`
   display: flex;
   grid-gap: 64px;
-  margin: 0 auto 80px;
+  margin: 0 auto;
 
   @media(max-width: 1200px) {
     grid-gap: 48px;
   }
   @media(max-width: 768px) {
     flex-direction: column;
-    margin-bottom: 64px;
     align-items: center;
   }
 `;
