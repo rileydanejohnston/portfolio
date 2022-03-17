@@ -12,16 +12,14 @@ import {
   ContactContent,
   ToolTip
 } from './styledContact';
+import uniqueId from 'lodash.uniqueid';
+import { email, phone, copyPhone } from '../../constants/contact';
 
 export default function Contact() {
 
   const [emailOpen, setEmailOpen] = useState(false);
   const [phoneOpen, setPhoneOpen] = useState(false);
   const [toolTip, setToolTip] = useState('Copy');
-
-  const email = 'rileydanejohnston@gmail.com';
-  const phone = '803-487-9451';
-  const copyPhone = '8034879451';
 
   useEffect(() => {
     if (toolTip === 'Copied!' && (emailOpen || phoneOpen)) {
@@ -38,7 +36,7 @@ export default function Contact() {
       <ContactContent>
         <Title>Let's talk</Title>
         <ContactList>
-          <ListItem>
+          <ListItem key={uniqueId()}>
             {email}
             <CopySymbol
               onClick={() => handleCopyClick(email)}
@@ -49,7 +47,7 @@ export default function Contact() {
               &#10697;
             </CopySymbol>
           </ListItem>
-          <ListItem>
+          <ListItem key={uniqueId()}>
             {phone}
             <CopySymbol
               onClick={() => handleCopyClick(copyPhone)}
@@ -60,24 +58,24 @@ export default function Contact() {
               &#10697;
             </CopySymbol>
           </ListItem>
-          <ListItem>
+          <ListItem key={uniqueId()}>
             <LinkedIcon 
               href='https://www.linkedin.com/in/rileyjohnston/' target='_blank' 
             />
           </ListItem>
-          <ListItem>
+          <ListItem key={uniqueId()}>
             <GithubIcon
             href='https://github.com/rileydanejohnston'
             target='_blank'
             />
           </ListItem>
-          <ListItem>
+          <ListItem key={uniqueId()}>
             <TwitterIcon
             href='https://twitter.com/RileyDJohnston'
             target='_blank'
             />
           </ListItem>
-          <ListItem>
+          <ListItem key={uniqueId()}>
             <AngelIcon
               href='https://angel.co/u/riley-johnston'
               target='_blank'

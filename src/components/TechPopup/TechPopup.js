@@ -2,6 +2,7 @@ import React from 'react'
 import Popup from '../Popup/Popup'
 import { Bullet, PopupContent, ListGroup, TechList, Title } from './styledTechPopup'
 import { main, other } from '../../constants/technologies'
+import uniqueId from 'lodash.uniqueid'
 
 export default function TechPopup({ closePopups, techOpen }) {
   return (
@@ -16,7 +17,7 @@ export default function TechPopup({ closePopups, techOpen }) {
             {
               main.map((tech) => {
                 return (
-                  <Bullet>{tech}</Bullet>
+                  <Bullet key={uniqueId(`${tech}_`)}>{tech}</Bullet>
                 )
               })
             }
@@ -28,7 +29,7 @@ export default function TechPopup({ closePopups, techOpen }) {
           {
               other.map((tech) => {
                 return (
-                  <Bullet>{tech}</Bullet>
+                  <Bullet key={uniqueId(`${tech}_`)}>{tech}</Bullet>
                 )
               })
             }

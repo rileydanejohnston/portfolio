@@ -17,6 +17,5 @@ export const other = [
   'JSON web tokens',
   'Bcryptjs',
   'Git/Github',
-  'Google Cloud',
-  'NGINX'
+  'Google Cloud'
 ];

@@ -8,6 +8,7 @@ import {
 import { NavGroup, NavList, NavWrapper, NavText, NavLinkWrapper } from './styledNavigation';
 import { navData } from '../../constants/navigation';
 import { useLocation } from 'react-router-dom/cjs/react-router-dom.min';
+import uniqueId from 'lodash.uniqueid';
 
 export default function Navigation({
   headerMenuOpen,
@@ -30,7 +31,7 @@ export default function Navigation({
         {
           navData.map(({ path, text }) => {
             return (
-              <NavGroup>
+              <NavGroup key={uniqueId(`${text}_`)}>
                 <NavLinkWrapper 
                   exact to={path}
                   activeStyle={{opacity: 1}}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, ButtonWrapper, Feature, FeatureWrapper, Image, InfoWrapper, ProjectWrapper, Summary, TextWrapper, Title } from './styledProject';
+import uniqueId from 'lodash.uniqueid';
 
 export default function Project({
   title,
@@ -26,7 +27,7 @@ export default function Project({
             {
               features.map((item) => {
                 return (
-                  <Feature>
+                  <Feature key={uniqueId(`${item[0]}_`)}>
                     {item}
                   </Feature>
                 )
